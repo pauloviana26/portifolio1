@@ -1,0 +1,22 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Dados</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-row style="height: 20%"></ion-row>
+  <div class="button">
+    <ion-button (click)="showAlert()" style="width: 40%;">Informe os dados</ion-button>
+  </div>
+  <div>
+    <ion-list>
+      <ion-item>
+        <ion-label>E-mail: {{ email }}</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>Telefone: {{ telefone }}</ion-label>
+      </ion-item>
+    </ion-list>
+  </div>
+</ion-content>
